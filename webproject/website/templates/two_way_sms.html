@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+TWO WAY SMS
+{% endblock %}
+{% block extra_head_content %}
+		<link rel="stylesheet" type="text/css" href='{% static "website/css/two_way_sms_style.css" %}'>
+{% endblock %}
+{% block content %}
+		
+		<section>
+			<div class="web-title">
+				<div class="container">
+					<h1>Two-Way SMS</h1>
+					<h2>The Power To Engage With Your Customers Through Quick Feedbacks</h2>
+					<p>We allow users to send and receive an SMS from a dedicated number through our SMS gateway.</p>
+					<button>Get Started for Free</button>
+				</div>
+			</div>
+			<div class="receive-callbackbar">
+				<div class="container">
+					<div class="callbackbar-text">
+						<h1>Receive a Call-Back</h1>
+						<p>Let our team help you cater your technical requirements</p>
+					</div>
+					<form name="callbackbarform">
+						<div class="callbackbar-form">
+							<div class="inputbar">
+								<label>Name<span>*</span></label>
+								<input type="text" name="name" placeholder="Enter your full name" required maxlength="45" />
+							</div>
+							<div class="inputbar">
+								<label>Work Email<span>*</span></label>
+								<input type="text" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45" />
+							</div>
+							<div class="inputbar">
+								<label>Phone Number<span>*</span></label>
+								<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="10" />
+							</div>
+							<div class="requestbutton">
+								<button type="submit">Send Request</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="engage">
+				<div class="container">
+					<h1>Engage in interactive communication</h1>
+					<div class="engage-item-content">
+						<div class="engage-item">
+							<img src='{% static "website/img/calendar.svg" %}' alt=""/>
+							<h2>Appointment Confirmations</h2>
+							<p>Comfirm your customer's appointments quickly on-the-go</p>
+						</div>
+						<div class="engage-item">
+							<img src='{% static "website/img/review.svg" %}' alt=""/>
+							<h2>Survey Responses</h2>
+							<p>Get quick responses and better reach on mass surveys programs</p>
+						</div>
+						<div class="engage-item">
+							<img src='{% static "website/img/subscription.svg" %}' alt=""/>
+							<h2>Opt-in SMS</h2>
+							<p>Make sure your customers subscribe to your texting communications</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="conversations">
+				<div class="container">
+					<h1>Create Conversations, Not Spam</h1>
+					<h6>
+						Sending emails and one-way marketing texts is a missed opportunity to capture leads, schedule an appointment, or sell directly in a messaging channel. Cut through the noise and engage your consumers with targeted, two-way messaging that outperforms traditional tactics.
+					</h6>
+					<h2>Better Care Experience</h2>
+					<p>Don't make customers call or visit a website to get support or information. Instead, use our outbound business messaging solution for oroactive account updates, service outages, and more, reducing inbound call volume and increasing customer satisfaction.</p>
+					<button>Get Started for Free</button>
+				</div>
+			</div>
+			<div class="connect">
+				<div class="container">
+					<h1>We Connect You To The World</h1>
+					<p>
+						With direct connection to 200 global telecom partners that connect to 65% of the world's mobile devices, we successfully deliver over 100 bullion messages a year. Connect worldwide with single interface and enjoy all the benefits of an industry-leading platform.
+					</p>
+				</div>
+			</div>
+		</section>
+{% endblock %}
+		

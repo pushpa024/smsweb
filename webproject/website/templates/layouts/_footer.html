@@ -1,0 +1,71 @@
+{% load static %}
+<div class="bottom">
+  <div class="container">
+    <div class="logo-bottom">
+      <img class="" src='{% static "website/img/item1.png" %}' alt="company logo">
+     
+    </div>
+    <div class="bottom-main d-flex justify-content-between">
+      <div class="about">
+        <h5>About</h5>
+        <h4>
+          We're a client-focused, corporate website provider you can count on...
+          We are a privately held, self funded, profitable company United Arab Emirates.
+          We form that vital link between mobile networks and businesses who want to communicate via text message with their potential customers.
+        </h4>
+        <div>
+          <img class="" src='{% static "website/img/payment_methods.svg" %}' alt="Payment Methods">
+         
+        </div>
+      </div>
+      <div class="contact-info">
+        <h5>Contact Info</h5>
+        <h6>Address</h6>
+        <p>United Arab Emirates</p>
+        <div class="d-flex">
+          <div class="office-number">
+            <h6>Office</h6>
+            <p>phone</p>
+          </div>
+          
+        </div>
+        <div>
+          <h6>Mobile</h6>
+          <p>00971 44 444 4444</p>
+        </div>
+        <div>
+          <h6>Mail</h6>
+          <p style="margin-bottom: 0;">info@website.solutions</p>
+        </div>
+      </div>
+      {% include "layouts/_receive_callback_footer.html" %}
+      
+    </div>
+  </div>
+</div>
+
+</div>
+<footer>
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="fotter-iconbar d-flex align-items-center">
+      <ul class="align-items-center">
+        <li role="button"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li role="button"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li role="button"><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li role="button"><a href="https://www.linkedin.com/company/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li role="button"><a href="https://www.youtube.com/channel/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+      </ul>
+      <p>&copy; 2013 - 2021 Website Solutions All Rights Reserved.</p>
+    </div>
+    <div class="conditions">
+      <div class="paypalimgbar">
+        <img class="" src='{% static "website/img/payment_methods.svg" %}' alt="Payment Methods">
+
+        </div>
+      <div class="footerlinkbar">
+        <a href="#">Terms & Conditions</a> | 
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>

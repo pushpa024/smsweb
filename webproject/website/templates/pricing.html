@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+SMS PRICE
+{% endblock %}
+{% block extra_head_content %}
+		<link rel="stylesheet" type="text/css" href='{% static "website/css/pricing_style.css" %}'>
+{% endblock %}
+{% block content %}	
+		<section>
+			<div class="web-title">
+				<div class="container">
+					<div class="web-title-text">
+						<h1>Test Drive</h1>
+						<h2>Our State-Of-The-Art Secure SMS Gateway Rest API</h2>
+						<p>With an open rate of 98%, SMS is the most direct and effective way to connect with your customers and clients.</p>
+						<button onclick="location.href='./credit_amount.html'">Buy Now</button>
+					</div>
+					<div class="web-title-img">
+						<img src='{% static "website/img/PricingGraphic.svg" %}' alt=""/>
+					</div>
+				</div>
+			</div>
+			<div class="receive-callbackbar">
+				<div class="container">
+					<div class="callbackbar-text">
+						<h1>Receive a Call-Back</h1>
+						<p>Let our team help you cater your technical requirements</p>
+					</div>
+					<form name="callbackbarform">
+						<div class="callbackbar-form">
+							<div class="inputbar">
+								<label>Name<span>*</span></label>
+								<input type="text" name="name" placeholder="Enter your full name" required maxlength="45" />
+							</div>
+							<div class="inputbar">
+								<label>Work Email<span>*</span></label>
+								<input type="text" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45" />
+							</div>
+							<div class="inputbar">
+								<label>Phone Number<span>*</span></label>
+								<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="10" />
+							</div>
+							<div class="requestbutton">
+								<button type="submit">Send Request</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="pricing-option">
+				<div class="container">
+					<h1>Simple, Flexible pricing options</h1>
+					<div class="d-flex justify-content-around">
+						<div class="pricing-option-item">
+							<div class="optionimg">
+								<img src='{% static "website/img/pay.svg" %}' alt=""/>
+							</div>
+							<h6>Pay-as-you-go</h6>
+							<p>Simple usage-based pricing means you don't get locked into big contracts</p>
+						</div>
+						<div class="pricing-option-item">
+							<div class="optionimg">
+								<img src='{% static "website/img/Volume_discounts.svg" %}' alt=""/>
+							</div>
+							<h6>Volume Discounts</h6>
+							<p>Discounts trigger as your usage grows, so you can always get a fair price</p>
+						</div>
+						<div class="pricing-option-item">
+							<div class="optionimg">
+								<img src='{% static "website/img/Committed_discount.svg" %}' alt=""/>
+							</div>
+							<h6>Committed-use Discounts</h6>
+							<p>Talk with our sales team for access to deeper discounts when you commit to usage</p>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+			<div class="buynowbuttonbar">
+				<div class="container">
+					<p>Start Building Today With Free Trial Credit And Full API Access</p>
+					<button class="desktop-button" onclick="location.href=''">Buy now</button>
+					<!-- <button class="mobile-button" onclick="location.href='./credit_amount.html'">Get Started for Free</button> -->
+				</div>
+			</div>
+			<div class="table-controlbar">
+				<div class="container d-flex align-items-end justify-content-between">
+					<div class="country-select">
+						<label>View by</label>
+						<div class="select-arrow">&#10094;</div>
+						<select>
+							<option>Country</option>
+						</select>
+					</div>
+					<div class="sort-select">
+						<label>Sort by</label>
+						<div class="select-arrow">&#10094;</div>
+						<select>
+							<option>Name (A-Z)</option>
+							<option>Name (Z-A)</option>
+						</select>
+					</div>
+					<div class="searchbar">
+						<input type="text" name="search" placeholder="Search">
+						<img src='{% static "website/img/search-24px.svg" %}' alt=""/>
+					</div>
+					<div class="downloadbar">
+						<div class="pdfdownload" class="d-flex align-items-center" role="button">
+							<img src='{% static "website/img/pdf.svg" %}' alt=""/>
+							<a href="#">Download PDF</a>
+						</div>
+						<div class="xlsdownload" class="d-flex align-items-center" role="button">
+							<img src='{% static "website/img/xls.svg" %}' alt=""/>
+							<a href="#">Download Excel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="table-main">
+				<div class="container">
+					<table id="simple_table">
+						<thead> 
+							<tr>
+								<th>Network Name</th>
+								<th>Country</th>
+								<th class="d-flex align-items-center">
+									<span>Price</span> 
+									<div class="arrow-down">&#10094;</div>
+									<select>
+										<option value="USD">USD</option>
+										<option value="AED">AED</option>
+										<option value="Euros">Euros</option>
+									</select>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>AWCC (Afghan Wireless Communication Company)</td>
+								<td>Afghanistan</td>
+								<td>0.436209267</td>
+							</tr>
+
+							<tr>
+								<td>Afghan Telecom (SALAAM)</td>
+								<td>Afghanistan</td>
+								<td>0.407883983</td>
+							</tr>
+
+							<tr>
+								<td>Etisalat Afghanistan</td>
+								<td>Afghanistan</td>
+								<td>0.379558712</td>
+							</tr>
+
+							<tr>
+								<td>MTN Afghanistan</td>
+								<td>Afghanistan</td>
+								<td>0.362563552</td>
+							</tr>
+							<tr>
+								<td>ROSHAN (TDCA Ltd)</td>
+								<td>Afghanistan</td>
+								<td>0.447539378</td>
+							</tr>
+
+							<tr>
+								<td>Afghan Telecom (SALAAM)</td>
+								<td>Afghanistan</td>
+								<td>0.407883983</td>
+							</tr>
+
+							<tr style="border: none;">
+								<td>AWCC (Afghan Wireless Communication Company)</td>
+								<td>Afghanistan</td>
+								<td>0.436209267</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table-page d-flex justify-content-end">
+						<p>Showing 1 out of 50</p>
+						<div class="d-flex align-items-center justify-content-between">
+							<button class="prevbutton">Prev</button>
+							<ul class="d-flex justify-content-between">
+								<li role="button">1</li>
+								<li role="button">2</li>
+								<li role="button">3</li>
+								<li role="button">4</li>
+								<li role="button">5</li>
+							</ul>
+							<button class="nextbutton">Next</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="require-form">
+				<div class="container">
+					<h1>Have a project we can help with?</h1>
+					<h5>Let our team help you cater your technical requirements</h5>
+					<div>
+						<form>
+							<div class="input-item d-flex justify-content-center">
+								<div>
+									<label>First Name<span>*</span></label>
+									<input type="text" name="firstName" placeholder="Enter your first name" required maxlength="45" />
+								</div>
+								<div>
+									<label>Last Name<span>*</span></label>
+									<input type="text" name="lastName" placeholder="Enter your last name" required maxlength="45"/>
+								</div>
+								<div style="margin-right: 0">
+									<label>Work Email<span>*</span></label>
+									<input type="text" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45"/>
+								</div>
+							</div>
+
+							<div class="input-item d-flex justify-content-center">
+								<div>
+									<label>Phone Number<span>*</span></label>
+									<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="10" />
+								</div>
+								<div>
+									<label>Company<span>*</span></label>
+									<input type="text" name="company" placeholder="Enter your company's name" required maxlength="45" />
+								</div>
+								<div style="margin-right: 0">
+									<label>Website<span>*</span></label>
+									<input type="text" name="website" placeholder="Enter URL of your website" required maxlength="45"/>
+								</div>
+							</div>
+
+							<div class="textarea-form">
+								<label>Description</label>
+								<textarea placeholder="Enter Description" required></textarea>
+							</div>
+
+							<div class="submitbutton">
+								<button type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}
+		
+		
